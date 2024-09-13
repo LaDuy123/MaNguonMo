@@ -1,0 +1,239 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: D:\MNM\Test\Test\netframework\bin\Release\669046e9-5383-4ef9-9a88-625836119596.bat
+// ***** Done, took 00:00:03 (3.93 sec)   *****
+// Found 2 benchmarks:
+//   ExcelReadingBenchmark.ReadExcelUsingEPPlus: DefaultJob
+//   ExcelReadingBenchmark.ReadExcelUsingOpenXml: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: ExcelReadingBenchmark.ReadExcelUsingEPPlus: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: D:\MNM\Test\Test\netframework\bin\Release\669046e9-5383-4ef9-9a88-625836119596.exe --anonymousPipes 1632 1644 --benchmarkName ExcelReadingBenchmark.ExcelReadingBenchmark.ReadExcelUsingEPPlus --job Default --benchmarkId 0 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT
+// GC=Concurrent Workstation
+// HardwareIntrinsics= 
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 218800.00 ns, 218.8000 us/op
+WorkloadJitting  1: 1 op, 227623000.00 ns, 227.6230 ms/op
+
+WorkloadPilot    1: 2 op, 23317300.00 ns, 11.6587 ms/op
+WorkloadPilot    2: 3 op, 32042200.00 ns, 10.6807 ms/op
+WorkloadPilot    3: 4 op, 39381500.00 ns, 9.8454 ms/op
+WorkloadPilot    4: 5 op, 50049900.00 ns, 10.0100 ms/op
+WorkloadPilot    5: 6 op, 55659800.00 ns, 9.2766 ms/op
+WorkloadPilot    6: 7 op, 67812100.00 ns, 9.6874 ms/op
+WorkloadPilot    7: 8 op, 68449800.00 ns, 8.5562 ms/op
+WorkloadPilot    8: 9 op, 75531100.00 ns, 8.3923 ms/op
+WorkloadPilot    9: 10 op, 92604300.00 ns, 9.2604 ms/op
+WorkloadPilot   10: 11 op, 98079000.00 ns, 8.9163 ms/op
+WorkloadPilot   11: 12 op, 106091300.00 ns, 8.8409 ms/op
+WorkloadPilot   12: 13 op, 107656200.00 ns, 8.2812 ms/op
+WorkloadPilot   13: 14 op, 122535800.00 ns, 8.7526 ms/op
+WorkloadPilot   14: 15 op, 140950500.00 ns, 9.3967 ms/op
+WorkloadPilot   15: 16 op, 189042800.00 ns, 11.8152 ms/op
+WorkloadPilot   16: 32 op, 310283600.00 ns, 9.6964 ms/op
+WorkloadPilot   17: 64 op, 552438500.00 ns, 8.6319 ms/op
+
+WorkloadWarmup   1: 64 op, 563550800.00 ns, 8.8055 ms/op
+WorkloadWarmup   2: 64 op, 546872300.00 ns, 8.5449 ms/op
+WorkloadWarmup   3: 64 op, 551894800.00 ns, 8.6234 ms/op
+WorkloadWarmup   4: 64 op, 552904400.00 ns, 8.6391 ms/op
+WorkloadWarmup   5: 64 op, 550786900.00 ns, 8.6060 ms/op
+WorkloadWarmup   6: 64 op, 551962500.00 ns, 8.6244 ms/op
+WorkloadWarmup   7: 64 op, 543909200.00 ns, 8.4986 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 539315000.00 ns, 8.4268 ms/op
+WorkloadActual   2: 64 op, 556090800.00 ns, 8.6889 ms/op
+WorkloadActual   3: 64 op, 540774900.00 ns, 8.4496 ms/op
+WorkloadActual   4: 64 op, 542375200.00 ns, 8.4746 ms/op
+WorkloadActual   5: 64 op, 546486500.00 ns, 8.5389 ms/op
+WorkloadActual   6: 64 op, 539838200.00 ns, 8.4350 ms/op
+WorkloadActual   7: 64 op, 552940800.00 ns, 8.6397 ms/op
+WorkloadActual   8: 64 op, 572413200.00 ns, 8.9440 ms/op
+WorkloadActual   9: 64 op, 542578700.00 ns, 8.4778 ms/op
+WorkloadActual  10: 64 op, 551647900.00 ns, 8.6195 ms/op
+WorkloadActual  11: 64 op, 559528900.00 ns, 8.7426 ms/op
+WorkloadActual  12: 64 op, 580685900.00 ns, 9.0732 ms/op
+WorkloadActual  13: 64 op, 543033400.00 ns, 8.4849 ms/op
+WorkloadActual  14: 64 op, 540315900.00 ns, 8.4424 ms/op
+WorkloadActual  15: 64 op, 543942400.00 ns, 8.4991 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 539315000.00 ns, 8.4268 ms/op
+WorkloadResult   2: 64 op, 556090800.00 ns, 8.6889 ms/op
+WorkloadResult   3: 64 op, 540774900.00 ns, 8.4496 ms/op
+WorkloadResult   4: 64 op, 542375200.00 ns, 8.4746 ms/op
+WorkloadResult   5: 64 op, 546486500.00 ns, 8.5389 ms/op
+WorkloadResult   6: 64 op, 539838200.00 ns, 8.4350 ms/op
+WorkloadResult   7: 64 op, 552940800.00 ns, 8.6397 ms/op
+WorkloadResult   8: 64 op, 572413200.00 ns, 8.9440 ms/op
+WorkloadResult   9: 64 op, 542578700.00 ns, 8.4778 ms/op
+WorkloadResult  10: 64 op, 551647900.00 ns, 8.6195 ms/op
+WorkloadResult  11: 64 op, 559528900.00 ns, 8.7426 ms/op
+WorkloadResult  12: 64 op, 543033400.00 ns, 8.4849 ms/op
+WorkloadResult  13: 64 op, 540315900.00 ns, 8.4424 ms/op
+WorkloadResult  14: 64 op, 543942400.00 ns, 8.4991 ms/op
+
+// AfterAll
+// Benchmark Process 17740 has exited with code 0.
+
+Mean = 8.562 ms, StdErr = 0.040 ms (0.47%), N = 14, StdDev = 0.149 ms
+Min = 8.427 ms, Q1 = 8.456 ms, Median = 8.492 ms, Q3 = 8.635 ms, Max = 8.944 ms
+IQR = 0.179 ms, LowerFence = 8.188 ms, UpperFence = 8.903 ms
+ConfidenceInterval = [8.393 ms; 8.730 ms] (CI 99.9%), Margin = 0.169 ms (1.97% of Mean)
+Skewness = 1.18, Kurtosis = 3.41, MValue = 2
+
+// ** Remained 1 (50.0%) benchmark(s) to run. Estimated finish 2024-09-10 18:10 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: ExcelReadingBenchmark.ReadExcelUsingOpenXml: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: D:\MNM\Test\Test\netframework\bin\Release\669046e9-5383-4ef9-9a88-625836119596.exe --anonymousPipes 1700 1636 --benchmarkName ExcelReadingBenchmark.ExcelReadingBenchmark.ReadExcelUsingOpenXml --job Default --benchmarkId 1 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT
+// GC=Concurrent Workstation
+// HardwareIntrinsics= 
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 166000.00 ns, 166.0000 us/op
+WorkloadJitting  1: 1 op, 303218800.00 ns, 303.2188 ms/op
+
+WorkloadPilot    1: 2 op, 189127400.00 ns, 94.5637 ms/op
+WorkloadPilot    2: 3 op, 283764300.00 ns, 94.5881 ms/op
+WorkloadPilot    3: 4 op, 360019000.00 ns, 90.0048 ms/op
+WorkloadPilot    4: 5 op, 456230500.00 ns, 91.2461 ms/op
+WorkloadPilot    5: 6 op, 556459000.00 ns, 92.7432 ms/op
+
+WorkloadWarmup   1: 6 op, 560348200.00 ns, 93.3914 ms/op
+WorkloadWarmup   2: 6 op, 567622100.00 ns, 94.6037 ms/op
+WorkloadWarmup   3: 6 op, 549795000.00 ns, 91.6325 ms/op
+WorkloadWarmup   4: 6 op, 544823300.00 ns, 90.8039 ms/op
+WorkloadWarmup   5: 6 op, 543409900.00 ns, 90.5683 ms/op
+WorkloadWarmup   6: 6 op, 550862900.00 ns, 91.8105 ms/op
+WorkloadWarmup   7: 6 op, 544142200.00 ns, 90.6904 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 6 op, 542096900.00 ns, 90.3495 ms/op
+WorkloadActual   2: 6 op, 550443500.00 ns, 91.7406 ms/op
+WorkloadActual   3: 6 op, 553288200.00 ns, 92.2147 ms/op
+WorkloadActual   4: 6 op, 573314200.00 ns, 95.5524 ms/op
+WorkloadActual   5: 6 op, 550231400.00 ns, 91.7052 ms/op
+WorkloadActual   6: 6 op, 553923600.00 ns, 92.3206 ms/op
+WorkloadActual   7: 6 op, 545580700.00 ns, 90.9301 ms/op
+WorkloadActual   8: 6 op, 548965100.00 ns, 91.4942 ms/op
+WorkloadActual   9: 6 op, 551114800.00 ns, 91.8525 ms/op
+WorkloadActual  10: 6 op, 564939200.00 ns, 94.1565 ms/op
+WorkloadActual  11: 6 op, 549204400.00 ns, 91.5341 ms/op
+WorkloadActual  12: 6 op, 555754500.00 ns, 92.6258 ms/op
+WorkloadActual  13: 6 op, 546396900.00 ns, 91.0662 ms/op
+WorkloadActual  14: 6 op, 567118800.00 ns, 94.5198 ms/op
+WorkloadActual  15: 6 op, 567326700.00 ns, 94.5545 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 6 op, 542096900.00 ns, 90.3495 ms/op
+WorkloadResult   2: 6 op, 550443500.00 ns, 91.7406 ms/op
+WorkloadResult   3: 6 op, 553288200.00 ns, 92.2147 ms/op
+WorkloadResult   4: 6 op, 573314200.00 ns, 95.5524 ms/op
+WorkloadResult   5: 6 op, 550231400.00 ns, 91.7052 ms/op
+WorkloadResult   6: 6 op, 553923600.00 ns, 92.3206 ms/op
+WorkloadResult   7: 6 op, 545580700.00 ns, 90.9301 ms/op
+WorkloadResult   8: 6 op, 548965100.00 ns, 91.4942 ms/op
+WorkloadResult   9: 6 op, 551114800.00 ns, 91.8525 ms/op
+WorkloadResult  10: 6 op, 564939200.00 ns, 94.1565 ms/op
+WorkloadResult  11: 6 op, 549204400.00 ns, 91.5341 ms/op
+WorkloadResult  12: 6 op, 555754500.00 ns, 92.6258 ms/op
+WorkloadResult  13: 6 op, 546396900.00 ns, 91.0662 ms/op
+WorkloadResult  14: 6 op, 567118800.00 ns, 94.5198 ms/op
+WorkloadResult  15: 6 op, 567326700.00 ns, 94.5545 ms/op
+
+// AfterAll
+// Benchmark Process 18776 has exited with code 0.
+
+Mean = 92.441 ms, StdErr = 0.397 ms (0.43%), N = 15, StdDev = 1.539 ms
+Min = 90.349 ms, Q1 = 91.514 ms, Median = 91.852 ms, Q3 = 93.391 ms, Max = 95.552 ms
+IQR = 1.877 ms, LowerFence = 88.699 ms, UpperFence = 96.207 ms
+ConfidenceInterval = [90.796 ms; 94.086 ms] (CI 99.9%), Margin = 1.645 ms (1.78% of Mean)
+Skewness = 0.66, Kurtosis = 2.03, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2024-09-10 18:10 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ExcelReadingBenchmark.ExcelReadingBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\ExcelReadingBenchmark.ExcelReadingBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\ExcelReadingBenchmark.ExcelReadingBenchmark-report.html
+
+// * Detailed results *
+ExcelReadingBenchmark.ReadExcelUsingEPPlus: DefaultJob
+Runtime = .NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT; GC = Concurrent Workstation
+Mean = 8.562 ms, StdErr = 0.040 ms (0.47%), N = 14, StdDev = 0.149 ms
+Min = 8.427 ms, Q1 = 8.456 ms, Median = 8.492 ms, Q3 = 8.635 ms, Max = 8.944 ms
+IQR = 0.179 ms, LowerFence = 8.188 ms, UpperFence = 8.903 ms
+ConfidenceInterval = [8.393 ms; 8.730 ms] (CI 99.9%), Margin = 0.169 ms (1.97% of Mean)
+Skewness = 1.18, Kurtosis = 3.41, MValue = 2
+-------------------- Histogram --------------------
+[8.398 ms ; 8.594 ms) | @@@@@@@@@
+[8.594 ms ; 9.025 ms) | @@@@@
+---------------------------------------------------
+
+ExcelReadingBenchmark.ReadExcelUsingOpenXml: DefaultJob
+Runtime = .NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT; GC = Concurrent Workstation
+Mean = 92.441 ms, StdErr = 0.397 ms (0.43%), N = 15, StdDev = 1.539 ms
+Min = 90.349 ms, Q1 = 91.514 ms, Median = 91.852 ms, Q3 = 93.391 ms, Max = 95.552 ms
+IQR = 1.877 ms, LowerFence = 88.699 ms, UpperFence = 96.207 ms
+ConfidenceInterval = [90.796 ms; 94.086 ms] (CI 99.9%), Margin = 1.645 ms (1.78% of Mean)
+Skewness = 0.66, Kurtosis = 2.03, MValue = 2
+-------------------- Histogram --------------------
+[89.530 ms ; 92.542 ms) | @@@@@@@@@@
+[92.542 ms ; 95.803 ms) | @@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4037/23H2/2023Update/SunValley3)
+Intel Core i3-1005G1 CPU 1.20GHz, 1 CPU, 4 logical and 2 physical cores
+  [Host]     : .NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT [AttachedDebugger]
+  DefaultJob : .NET Framework 4.8.1 (4.8.9261.0), X86 LegacyJIT
+
+
+| Method                | Mean      | Error     | StdDev    |
+|---------------------- |----------:|----------:|----------:|
+| ReadExcelUsingEPPlus  |  8.562 ms | 0.1686 ms | 0.1495 ms |
+| ReadExcelUsingOpenXml | 92.441 ms | 1.6452 ms | 1.5389 ms |
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Hints *
+Outliers
+  ExcelReadingBenchmark.ReadExcelUsingEPPlus: Default -> 1 outlier  was  removed (9.07 ms)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:29 (29.71 sec), executed benchmarks: 2
+
+Global total time: 00:00:35 (35.13 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished

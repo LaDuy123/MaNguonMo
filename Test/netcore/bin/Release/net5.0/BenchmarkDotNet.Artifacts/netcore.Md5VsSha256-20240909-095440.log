@@ -1,0 +1,353 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\obj\Release\net5.0/" /p:OutDir="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0/" /p:OutputPath="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0/" in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb
+// command took 2.29 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\obj\Release\net5.0/" /p:OutDir="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0/" /p:OutputPath="D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0/" --output "D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0/" in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb
+// command took 7.3 sec and exited with 0
+// ***** Done, took 00:00:09 (9.95 sec)   *****
+// Found 3 benchmarks:
+//   Md5VsSha256.MethodSumUsingFor: DefaultJob
+//   Md5VsSha256.MethodSumUsingForParallel: DefaultJob
+//   Md5VsSha256.MethodSumUsingLinq: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Md5VsSha256.MethodSumUsingFor: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3ebae93e-faec-4304-b90e-a1c96a969feb.dll --anonymousPipes 2264 2204 --benchmarkName netcore.Md5VsSha256.MethodSumUsingFor --job Default --benchmarkId 0 in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 227700.00 ns, 227.7000 us/op
+WorkloadJitting  1: 1 op, 248400.00 ns, 248.4000 us/op
+
+OverheadJitting  2: 16 op, 407000.00 ns, 25.4375 us/op
+WorkloadJitting  2: 16 op, 1282500.00 ns, 80.1563 us/op
+
+WorkloadPilot    1: 16 op, 733500.00 ns, 45.8438 us/op
+WorkloadPilot    2: 32 op, 1333200.00 ns, 41.6625 us/op
+WorkloadPilot    3: 64 op, 2787000.00 ns, 43.5469 us/op
+WorkloadPilot    4: 128 op, 5712500.00 ns, 44.6289 us/op
+WorkloadPilot    5: 256 op, 12315900.00 ns, 48.1090 us/op
+WorkloadPilot    6: 512 op, 25696900.00 ns, 50.1893 us/op
+WorkloadPilot    7: 1024 op, 54595700.00 ns, 53.3161 us/op
+WorkloadPilot    8: 2048 op, 103363100.00 ns, 50.4703 us/op
+WorkloadPilot    9: 4096 op, 197207600.00 ns, 48.1464 us/op
+WorkloadPilot   10: 8192 op, 345857000.00 ns, 42.2189 us/op
+WorkloadPilot   11: 16384 op, 740392300.00 ns, 45.1900 us/op
+
+OverheadWarmup   1: 16384 op, 45500.00 ns, 2.7771 ns/op
+OverheadWarmup   2: 16384 op, 43500.00 ns, 2.6550 ns/op
+OverheadWarmup   3: 16384 op, 43900.00 ns, 2.6794 ns/op
+OverheadWarmup   4: 16384 op, 45000.00 ns, 2.7466 ns/op
+OverheadWarmup   5: 16384 op, 32400.00 ns, 1.9775 ns/op
+OverheadWarmup   6: 16384 op, 39900.00 ns, 2.4353 ns/op
+OverheadWarmup   7: 16384 op, 44400.00 ns, 2.7100 ns/op
+OverheadWarmup   8: 16384 op, 41200.00 ns, 2.5146 ns/op
+
+OverheadActual   1: 16384 op, 43900.00 ns, 2.6794 ns/op
+OverheadActual   2: 16384 op, 31000.00 ns, 1.8921 ns/op
+OverheadActual   3: 16384 op, 31100.00 ns, 1.8982 ns/op
+OverheadActual   4: 16384 op, 42200.00 ns, 2.5757 ns/op
+OverheadActual   5: 16384 op, 44800.00 ns, 2.7344 ns/op
+OverheadActual   6: 16384 op, 43500.00 ns, 2.6550 ns/op
+OverheadActual   7: 16384 op, 43800.00 ns, 2.6733 ns/op
+OverheadActual   8: 16384 op, 43000.00 ns, 2.6245 ns/op
+OverheadActual   9: 16384 op, 51600.00 ns, 3.1494 ns/op
+OverheadActual  10: 16384 op, 40500.00 ns, 2.4719 ns/op
+OverheadActual  11: 16384 op, 41700.00 ns, 2.5452 ns/op
+OverheadActual  12: 16384 op, 38700.00 ns, 2.3621 ns/op
+OverheadActual  13: 16384 op, 42100.00 ns, 2.5696 ns/op
+OverheadActual  14: 16384 op, 30800.00 ns, 1.8799 ns/op
+OverheadActual  15: 16384 op, 30800.00 ns, 1.8799 ns/op
+OverheadActual  16: 16384 op, 38700.00 ns, 2.3621 ns/op
+OverheadActual  17: 16384 op, 30900.00 ns, 1.8860 ns/op
+OverheadActual  18: 16384 op, 31500.00 ns, 1.9226 ns/op
+OverheadActual  19: 16384 op, 31300.00 ns, 1.9104 ns/op
+OverheadActual  20: 16384 op, 30800.00 ns, 1.8799 ns/op
+
+WorkloadWarmup   1: 16384 op, 711094900.00 ns, 43.4018 us/op
+WorkloadWarmup   2: 16384 op, 715194000.00 ns, 43.6520 us/op
+WorkloadWarmup   3: 16384 op, 695709000.00 ns, 42.4627 us/op
+WorkloadWarmup   4: 16384 op, 697662100.00 ns, 42.5819 us/op
+WorkloadWarmup   5: 16384 op, 721928200.00 ns, 44.0630 us/op
+WorkloadWarmup   6: 16384 op, 710775300.00 ns, 43.3823 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 16384 op, 720856200.00 ns, 43.9976 us/op
+WorkloadActual   2: 16384 op, 724907100.00 ns, 44.2448 us/op
+WorkloadActual   3: 16384 op, 713091900.00 ns, 43.5237 us/op
+WorkloadActual   4: 16384 op, 726492000.00 ns, 44.3416 us/op
+WorkloadActual   5: 16384 op, 699297700.00 ns, 42.6817 us/op
+WorkloadActual   6: 16384 op, 724033000.00 ns, 44.1915 us/op
+WorkloadActual   7: 16384 op, 707156200.00 ns, 43.1614 us/op
+WorkloadActual   8: 16384 op, 725156400.00 ns, 44.2600 us/op
+WorkloadActual   9: 16384 op, 722418900.00 ns, 44.0930 us/op
+WorkloadActual  10: 16384 op, 718110000.00 ns, 43.8300 us/op
+WorkloadActual  11: 16384 op, 726078300.00 ns, 44.3163 us/op
+WorkloadActual  12: 16384 op, 719925100.00 ns, 43.9407 us/op
+WorkloadActual  13: 16384 op, 724520900.00 ns, 44.2212 us/op
+WorkloadActual  14: 16384 op, 709473900.00 ns, 43.3029 us/op
+WorkloadActual  15: 16384 op, 717680700.00 ns, 43.8038 us/op
+
+// AfterActualRun
+WorkloadResult   1: 16384 op, 720816600.00 ns, 43.9952 us/op
+WorkloadResult   2: 16384 op, 724867500.00 ns, 44.2424 us/op
+WorkloadResult   3: 16384 op, 713052300.00 ns, 43.5213 us/op
+WorkloadResult   4: 16384 op, 726452400.00 ns, 44.3391 us/op
+WorkloadResult   5: 16384 op, 699258100.00 ns, 42.6793 us/op
+WorkloadResult   6: 16384 op, 723993400.00 ns, 44.1891 us/op
+WorkloadResult   7: 16384 op, 707116600.00 ns, 43.1590 us/op
+WorkloadResult   8: 16384 op, 725116800.00 ns, 44.2576 us/op
+WorkloadResult   9: 16384 op, 722379300.00 ns, 44.0905 us/op
+WorkloadResult  10: 16384 op, 718070400.00 ns, 43.8275 us/op
+WorkloadResult  11: 16384 op, 726038700.00 ns, 44.3139 us/op
+WorkloadResult  12: 16384 op, 719885500.00 ns, 43.9383 us/op
+WorkloadResult  13: 16384 op, 724481300.00 ns, 44.2188 us/op
+WorkloadResult  14: 16384 op, 709434300.00 ns, 43.3004 us/op
+WorkloadResult  15: 16384 op, 717641100.00 ns, 43.8013 us/op
+
+// AfterAll
+// Benchmark Process 25168 has exited with code 0.
+
+Mean = 43.858 μs, StdErr = 0.127 μs (0.29%), N = 15, StdDev = 0.491 μs
+Min = 42.679 μs, Q1 = 43.661 μs, Median = 43.995 μs, Q3 = 44.231 μs, Max = 44.339 μs
+IQR = 0.569 μs, LowerFence = 42.807 μs, UpperFence = 45.085 μs
+ConfidenceInterval = [43.334 μs; 44.383 μs] (CI 99.9%), Margin = 0.525 μs (1.20% of Mean)
+Skewness = -1, Kurtosis = 2.82, MValue = 2
+
+// ** Remained 2 (66.7%) benchmark(s) to run. Estimated finish 2024-09-09 9:56 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Md5VsSha256.MethodSumUsingForParallel: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3ebae93e-faec-4304-b90e-a1c96a969feb.dll --anonymousPipes 2124 2088 --benchmarkName netcore.Md5VsSha256.MethodSumUsingForParallel --job Default --benchmarkId 1 in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 416600.00 ns, 416.6000 us/op
+WorkloadJitting  1: 1 op, 6653800.00 ns, 6.6538 ms/op
+
+OverheadJitting  2: 16 op, 614600.00 ns, 38.4125 us/op
+WorkloadJitting  2: 16 op, 43432400.00 ns, 2.7145 ms/op
+
+WorkloadPilot    1: 16 op, 41285500.00 ns, 2.5803 ms/op
+WorkloadPilot    2: 32 op, 85645500.00 ns, 2.6764 ms/op
+WorkloadPilot    3: 64 op, 167201800.00 ns, 2.6125 ms/op
+WorkloadPilot    4: 128 op, 316035000.00 ns, 2.4690 ms/op
+WorkloadPilot    5: 256 op, 640251800.00 ns, 2.5010 ms/op
+
+OverheadWarmup   1: 256 op, 2900.00 ns, 11.3281 ns/op
+OverheadWarmup   2: 256 op, 1300.00 ns, 5.0781 ns/op
+OverheadWarmup   3: 256 op, 1200.00 ns, 4.6875 ns/op
+OverheadWarmup   4: 256 op, 1300.00 ns, 5.0781 ns/op
+OverheadWarmup   5: 256 op, 1700.00 ns, 6.6406 ns/op
+OverheadWarmup   6: 256 op, 1600.00 ns, 6.2500 ns/op
+OverheadWarmup   7: 256 op, 1900.00 ns, 7.4219 ns/op
+OverheadWarmup   8: 256 op, 1200.00 ns, 4.6875 ns/op
+
+OverheadActual   1: 256 op, 1700.00 ns, 6.6406 ns/op
+OverheadActual   2: 256 op, 1800.00 ns, 7.0313 ns/op
+OverheadActual   3: 256 op, 2100.00 ns, 8.2031 ns/op
+OverheadActual   4: 256 op, 1400.00 ns, 5.4688 ns/op
+OverheadActual   5: 256 op, 1600.00 ns, 6.2500 ns/op
+OverheadActual   6: 256 op, 1500.00 ns, 5.8594 ns/op
+OverheadActual   7: 256 op, 1300.00 ns, 5.0781 ns/op
+OverheadActual   8: 256 op, 1200.00 ns, 4.6875 ns/op
+OverheadActual   9: 256 op, 1200.00 ns, 4.6875 ns/op
+OverheadActual  10: 256 op, 1300.00 ns, 5.0781 ns/op
+OverheadActual  11: 256 op, 1500.00 ns, 5.8594 ns/op
+OverheadActual  12: 256 op, 1500.00 ns, 5.8594 ns/op
+OverheadActual  13: 256 op, 1500.00 ns, 5.8594 ns/op
+OverheadActual  14: 256 op, 1500.00 ns, 5.8594 ns/op
+OverheadActual  15: 256 op, 1600.00 ns, 6.2500 ns/op
+OverheadActual  16: 256 op, 1300.00 ns, 5.0781 ns/op
+OverheadActual  17: 256 op, 1400.00 ns, 5.4688 ns/op
+OverheadActual  18: 256 op, 1600.00 ns, 6.2500 ns/op
+OverheadActual  19: 256 op, 2500.00 ns, 9.7656 ns/op
+OverheadActual  20: 256 op, 1700.00 ns, 6.6406 ns/op
+
+WorkloadWarmup   1: 256 op, 635745900.00 ns, 2.4834 ms/op
+WorkloadWarmup   2: 256 op, 633699200.00 ns, 2.4754 ms/op
+WorkloadWarmup   3: 256 op, 626704000.00 ns, 2.4481 ms/op
+WorkloadWarmup   4: 256 op, 637404600.00 ns, 2.4899 ms/op
+WorkloadWarmup   5: 256 op, 631986900.00 ns, 2.4687 ms/op
+WorkloadWarmup   6: 256 op, 631218800.00 ns, 2.4657 ms/op
+WorkloadWarmup   7: 256 op, 633748800.00 ns, 2.4756 ms/op
+WorkloadWarmup   8: 256 op, 617550500.00 ns, 2.4123 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 256 op, 625711600.00 ns, 2.4442 ms/op
+WorkloadActual   2: 256 op, 637218400.00 ns, 2.4891 ms/op
+WorkloadActual   3: 256 op, 626025800.00 ns, 2.4454 ms/op
+WorkloadActual   4: 256 op, 637073600.00 ns, 2.4886 ms/op
+WorkloadActual   5: 256 op, 633122700.00 ns, 2.4731 ms/op
+WorkloadActual   6: 256 op, 638100600.00 ns, 2.4926 ms/op
+WorkloadActual   7: 256 op, 622459100.00 ns, 2.4315 ms/op
+WorkloadActual   8: 256 op, 636393200.00 ns, 2.4859 ms/op
+WorkloadActual   9: 256 op, 637121700.00 ns, 2.4888 ms/op
+WorkloadActual  10: 256 op, 636608600.00 ns, 2.4868 ms/op
+WorkloadActual  11: 256 op, 633839500.00 ns, 2.4759 ms/op
+WorkloadActual  12: 256 op, 629083400.00 ns, 2.4574 ms/op
+WorkloadActual  13: 256 op, 638187300.00 ns, 2.4929 ms/op
+WorkloadActual  14: 256 op, 633113700.00 ns, 2.4731 ms/op
+WorkloadActual  15: 256 op, 626419600.00 ns, 2.4470 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 256 op, 625710100.00 ns, 2.4442 ms/op
+WorkloadResult   2: 256 op, 637216900.00 ns, 2.4891 ms/op
+WorkloadResult   3: 256 op, 626024300.00 ns, 2.4454 ms/op
+WorkloadResult   4: 256 op, 637072100.00 ns, 2.4886 ms/op
+WorkloadResult   5: 256 op, 633121200.00 ns, 2.4731 ms/op
+WorkloadResult   6: 256 op, 638099100.00 ns, 2.4926 ms/op
+WorkloadResult   7: 256 op, 622457600.00 ns, 2.4315 ms/op
+WorkloadResult   8: 256 op, 636391700.00 ns, 2.4859 ms/op
+WorkloadResult   9: 256 op, 637120200.00 ns, 2.4888 ms/op
+WorkloadResult  10: 256 op, 636607100.00 ns, 2.4867 ms/op
+WorkloadResult  11: 256 op, 633838000.00 ns, 2.4759 ms/op
+WorkloadResult  12: 256 op, 629081900.00 ns, 2.4574 ms/op
+WorkloadResult  13: 256 op, 638185800.00 ns, 2.4929 ms/op
+WorkloadResult  14: 256 op, 633112200.00 ns, 2.4731 ms/op
+WorkloadResult  15: 256 op, 626418100.00 ns, 2.4469 ms/op
+
+// AfterAll
+// Benchmark Process 6624 has exited with code 0.
+
+Mean = 2.471 ms, StdErr = 0.005 ms (0.22%), N = 15, StdDev = 0.021 ms
+Min = 2.431 ms, Q1 = 2.452 ms, Median = 2.476 ms, Q3 = 2.489 ms, Max = 2.493 ms
+IQR = 0.037 ms, LowerFence = 2.397 ms, UpperFence = 2.543 ms
+ConfidenceInterval = [2.449 ms; 2.494 ms] (CI 99.9%), Margin = 0.022 ms (0.90% of Mean)
+Skewness = -0.57, Kurtosis = 1.67, MValue = 2
+
+// ** Remained 1 (33.3%) benchmark(s) to run. Estimated finish 2024-09-09 9:55 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Md5VsSha256.MethodSumUsingLinq: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3ebae93e-faec-4304-b90e-a1c96a969feb.dll --anonymousPipes 2484 2264 --benchmarkName netcore.Md5VsSha256.MethodSumUsingLinq --job Default --benchmarkId 2 in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 212600.00 ns, 212.6000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.Linq.Enumerable.Sum(IEnumerable`1 source)
+   at netcore.Md5VsSha256.MethodSumUsingLinq() in D:\MNM\Test\netcore\Program.cs:line 44
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionNoUnroll(Int64 invokeCount) in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\3ebae93e-faec-4304-b90e-a1c96a969feb.notcs:line 695
+   at BenchmarkDotNet.Engines.Engine.Measure(Action`1 action, Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(IHost host, String benchmarkName) in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\3ebae93e-faec-4304-b90e-a1c96a969feb.notcs:line 560
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in D:\MNM\Test\netcore\bin\Release\net5.0\3ebae93e-faec-4304-b90e-a1c96a969feb\3ebae93e-faec-4304-b90e-a1c96a969feb.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 18108 has exited with code -1.
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2024-09-09 9:55 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\netcore.Md5VsSha256-report.csv
+  BenchmarkDotNet.Artifacts\results\netcore.Md5VsSha256-report-github.md
+  BenchmarkDotNet.Artifacts\results\netcore.Md5VsSha256-report.html
+
+// * Detailed results *
+Md5VsSha256.MethodSumUsingFor: DefaultJob
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 43.858 μs, StdErr = 0.127 μs (0.29%), N = 15, StdDev = 0.491 μs
+Min = 42.679 μs, Q1 = 43.661 μs, Median = 43.995 μs, Q3 = 44.231 μs, Max = 44.339 μs
+IQR = 0.569 μs, LowerFence = 42.807 μs, UpperFence = 45.085 μs
+ConfidenceInterval = [43.334 μs; 44.383 μs] (CI 99.9%), Margin = 0.525 μs (1.20% of Mean)
+Skewness = -1, Kurtosis = 2.82, MValue = 2
+-------------------- Histogram --------------------
+[42.418 μs ; 44.524 μs) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+Md5VsSha256.MethodSumUsingForParallel: DefaultJob
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 2.471 ms, StdErr = 0.005 ms (0.22%), N = 15, StdDev = 0.021 ms
+Min = 2.431 ms, Q1 = 2.452 ms, Median = 2.476 ms, Q3 = 2.489 ms, Max = 2.493 ms
+IQR = 0.037 ms, LowerFence = 2.397 ms, UpperFence = 2.543 ms
+ConfidenceInterval = [2.449 ms; 2.494 ms] (CI 99.9%), Margin = 0.022 ms (0.90% of Mean)
+Skewness = -0.57, Kurtosis = 1.67, MValue = 2
+-------------------- Histogram --------------------
+[2.420 ms ; 2.504 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+Md5VsSha256.MethodSumUsingLinq: DefaultJob
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4037/23H2/2023Update/SunValley3)
+Intel Core i3-1005G1 CPU 1.20GHz, 1 CPU, 4 logical and 2 physical cores
+.NET SDK 8.0.401
+  [Host]     : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2 [AttachedDebugger]
+  DefaultJob : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2
+
+
+| Method                    | Mean        | Error     | StdDev    |
+|-------------------------- |------------:|----------:|----------:|
+| MethodSumUsingFor         |    43.86 μs |  0.525 μs |  0.491 μs |
+| MethodSumUsingForParallel | 2,471.47 μs | 22.314 μs | 20.872 μs |
+| MethodSumUsingLinq        |          NA |        NA |        NA |
+
+Benchmarks with issues:
+  Md5VsSha256.MethodSumUsingLinq: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Windows Defender (windowsdefender://)
+        - McAfee VirusScan (C:\Program Files\McAfee.com\Agent\mcupdate.exe)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+
+// * Hints *
+Outliers
+  Md5VsSha256.MethodSumUsingFor: Default -> 1 outlier  was  detected (42.68 μs)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 μs   : 1 Microsecond (0.000001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:42 (42.8 sec), executed benchmarks: 3
+
+Global total time: 00:00:53 (53.38 sec), executed benchmarks: 3
+// * Artifacts cleanup *
+Artifacts cleanup is finished

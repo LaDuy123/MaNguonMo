@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>netcore.Md5VsSha256-20240910-171404</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4037/23H2/2023Update/SunValley3)
+Intel Core i3-1005G1 CPU 1.20GHz, 1 CPU, 4 logical and 2 physical cores
+.NET SDK 8.0.401
+  [Host]     : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2 [AttachedDebugger]
+  DefaultJob : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method             </th><th>Mean </th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>MethodSumUsingFor</td><td>43.76 &mu;s</td><td>0.873 &mu;s</td><td>1.006 &mu;s</td>
+</tr><tr><td>MethodSumUsingForParallel</td><td>2,457.55 &mu;s</td><td>25.275 &mu;s</td><td>23.642 &mu;s</td>
+</tr><tr><td>MethodSumUsingLinq</td><td>NA</td><td>NA</td><td>NA</td>
+</tr></tbody></table>
+</body>
+</html>
